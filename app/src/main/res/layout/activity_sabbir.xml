@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySabbir"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sab"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name and Designation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sabbir Hossen"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecturer"
+                android:textSize="18sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Contact Information -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sabbir@cityuniversity.edu.bd\n+880 1757-007366"
+                android:paddingBottom="16dp" />
+
+            <!-- Faculty and Department -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty and Department Affiliation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty of Science and Engineering\nDepartment of Computer Science and Engineering"
+                android:paddingBottom="16dp" />
+
+            <!-- Degrees and Universities -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Degrees and Universities Attended"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MSc in Computer Science from American International University-Bangladesh (AIUB)\n\nBSc in Computer Engineering from American International University-Bangladesh (AIUB)\n\nHSC from Bogura Cantonment Public School and College, Bogura\n\nSSC from Cantonment Board High School Jahangirabad, Bogura"
+                android:paddingBottom="16dp" />
+
+            <!-- Short Introduction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Introduction"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sabbir Hossen is currently serving as a Lecturer in the Department of Computer Science and Engineering at City University. Prior to entering City University, he worked as a Teaching Assistant (TA) in the Faculty of Engineering at AIUB. He also has IT company experience, working as an Engineer in the Network Operation Center at Fiber@Home Ltd., a renowned NTTN company in Bangladesh. His research focuses on exploring new things in Computer Networks, Cloud Computing, and Cyber Security. He has published papers in prestigious proceedings of world-famous publishers like Springer and IEEE, and many of his papers are currently under review. Besides his academic activities, he has participated in extracurricular activities like winning 1st place in “ROBOLUTION-2016” organized by MIST Robotics Club, volunteering in “ICT Expo 2015” organized by ICT Division Bangladesh, and working as a team member in the “Europe Rover Challenge 2015” organized by Europe Space Foundation."
+                android:paddingBottom="16dp" />
+
+            <!-- Teaching Experience -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teaching Experience"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Lecturer, Department of Computer Science and Engineering, City University (January 2023 – Till date).\n\n2. Teaching Assistant (TA), Faculty of Engineering, American International University-Bangladesh (AIUB) (April 2019 – October 2019)."
+                android:paddingBottom="16dp" />
+
+            <!-- Research Interests -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Research Interests"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Computer Networks\n2. Cloud Computing\n3. Cyber Security\n4. Cryptography and Information Security"
+                android:paddingBottom="16dp" />
+
+            <!-- Academic Achievements -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Academic Excellence"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Received Leadership Award (Chairman’s Award) from AIUB for outreach program.\n\n2. Full Scholarship from AIUB to complete the Graduation program.\n\n3. Full Scholarship from AIUB to complete the Undergraduate program."
+                android:paddingBottom="16dp" />
+
+            <!-- Professional Certifications -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professional Certifications"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Cisco Certified CCNA (Routing and Switching)\n2. Introduction to Cyber Security and Cyber Security Essentials\n3. AWS Certified Solutions Architect Associate (Course Ongoing)\n4. Redhat Certified System Administrator (RHCSA) (Course Ongoing)"
+                android:paddingBottom="16dp" />
+
+            <!-- Organization Affiliations -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organization Affiliations"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Professional Membership, IEEE - Institute of Electrical and Electronics Engineers\n\n2. Associate Member, IEB - Institution of Engineers, Bangladesh."
+                android:paddingBottom="16dp" />
+
+            <!-- Publications -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publications"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Md. Iftekhar Islam, Maruf Raj, Shantanu Nath, Forhadur Rahman, Sabbir Hossen, Mohammad Hasan Imam, “AN INDOOR NAVIGATION SYSTEM FOR VISUALLY IMPAIRED PEOPLE USING PATH FINDING ALGORITHM AND A WEARABLE CAP”- IEEE Sponsored 3rd International Conference for Convergence in Technology (I2CT) 2018, India. DOI: 10.1109/I2CT.2018.8529757 [Published]\n\n2. Faria Rahman Annasha, Sabbir Hossen, Monoara Sultana Morzina, Md. Solaiman Kabir, Md. Showrov Hossen, “Credit Card Clients Payment Prediction for Next Month Using Machine Learning Algorithm” Journal of Computer Science and Technology Studies (JCSTS). DOI: 10.32996/jcsts."
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

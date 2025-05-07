@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMiraj"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mir"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name and Designation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Md. Ajharul Islam Miraj"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecturer"
+                android:textSize="18sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Contact Information -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: miraj.cs18@gmail.com, miraj.cse@cityuniversity.ac.bd\nPhone: 01568727417"
+                android:paddingBottom="16dp" />
+
+            <!-- Faculty and Department -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty and Department Affiliation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty of Science and Engineering\nDepartment of Computer Science and Engineering"
+                android:paddingBottom="16dp" />
+
+            <!-- Degrees and Universities -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Degrees and Universities Attended"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• M.Sc in Computer Science from Jahangirnagar University\n\n• B.Sc in Computer Science and Engineering from American International University-Bangladesh\n\n• HSC from B.A.F. Shaheen College, Tejgaon, Dhaka\n\n• SSC from Milestone College"
+                android:paddingBottom="16dp" />
+
+            <!-- Short Introduction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Introduction"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Md Ajharul Islam Miraj is a lecturer in the Department of Computer Science and Engineering at City University Bangladesh. He completed SSC and HSC from Milestone College and B.A.F. Shaheen College, Tejgaon. He completed his Bachelor of Science in Computer Science and Engineering from American International University-Bangladesh with a CGPA of 3.79 out of 4.00, earning an academic scholarship. Later, he completed his Master’s in Computer Science from Jahangirnagar University with a CGPA of 3.90 out of 4.00, with an academic waiver. During his studentship, he was a popular tutor for HSC students in mathematics and physics. Before joining City University, he worked as a software engineer and full-stack developer at Sheraspace Ltd. He also served as a Teaching Assistant (TA) in the Faculty of Science and Technology at AIUB. His research focuses on Machine Learning, Deep Learning, Artificial Intelligence, and Blockchain."
+                android:paddingBottom="16dp" />
+
+            <!-- Teaching Experience -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teaching Experience"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Lecturer, Department of Computer Science and Engineering, City University (August 2023 – Present)\n\n2. Teaching Assistant (TA), Faculty of Science and Technology, AIUB (June 2021 – December 2021)\n\n3. Private Tutor for HSC Mathematics and Physics (January 2018 – December 2021)"
+                android:paddingBottom="16dp" />
+
+            <!-- Research Interests -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Research Interests"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Machine Learning\n2. Deep Learning\n3. Artificial Intelligence\n4. Computer Vision\n5. Blockchain"
+                android:paddingBottom="16dp" />
+
+            <!-- Publications -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publications"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• A deep learning framework to reconstruct face under mask. In 2022 7th International Conference on Data Science and Machine Learning Applications (CDMA) (pp. 200-205). IEEE. DOI: 10.1109/CDMA54072.2022.00038"
+                android:paddingBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

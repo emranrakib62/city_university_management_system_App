@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAta"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ata"/>
+    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Md Ataullah Bhuiyan"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <!-- Designation -->
+                <TextView
+                    android:id="@+id/textViewDesignation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Senior Lecturer and Coordinator"
+                    android:textSize="18sp"
+                    android:paddingBottom="16dp" />
+
+                <!-- Contact Information -->
+                <TextView
+                    android:id="@+id/textViewContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="abab_bn@yahoo.com\n+8801843906686"
+                    android:paddingBottom="16dp" />
+
+                <!-- Faculty and Department -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty and Department Affiliation"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty of Science and Engineering\nDepartment of Computer Science and Engineering"
+                    android:paddingBottom="16dp" />
+
+                <!-- Degrees -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Degrees and Universities Attended"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BSc in CSE, Intercollege, Cyprus"
+                    android:paddingBottom="16dp" />
+
+                <!-- Short Introduction -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Short Introduction"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Md Ataullah Bhuiyan completed his bachelor in Computer Science and Engineering from Intercollege Cyprus. His teaching courses include Web Database Programming, Microprocessor and Assembly Language, Computer Network, Internet and Internet Technology/E-commerce, DBMS, and Structured Programming. He has supervised many student projects which have been awarded by the Bangladesh ICT Ministry BASIS SoftExpo and other national ICT fairs. Some of these projects include:"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Smart Irrigation and Fertilization\n2. Web-Based Book Searching and Book Recommendation System Using Machine Learning\n3. IoT-Based Live Streaming and Object Detecting AI Robotic Car\n4. Stock Price Prediction Based on DSE Using Machine Learning Techniques and Its Application\n5. ECG Scanner to Predict Heart Attack and Its Application (Android)\n6. Fashion Class Classification Using Convolutional Neural Network and Its Application\n7. Prediction of Diabetes Disease Using Data Mining with Its Application\n8. Autonomous Smart Fire Fighter Robot\n9. Digital Stair Climbing Wheelchair"
+                    android:paddingBottom="16dp" />
+
+                <!-- Teaching Experience -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teaching Experience"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Senior Lecturer, Department of CSE, since November 2014"
+                    android:paddingBottom="16dp" />
+
+                <!-- Research Interests -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Research Interest"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Machine Learning and Web Engineering, IoT and Embedded Systems"
+                    android:paddingBottom="16dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+

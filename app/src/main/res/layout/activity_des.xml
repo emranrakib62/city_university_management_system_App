@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".DesActivity">
+
+    <!-- Image Section -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        android:contentDescription="Image Description" />
+
+    <!-- Scrollable Text Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:text="City University of Bangladesh – CSE Department Overview\n\n
+About the CSE Department\n
+The Computer Science and Engineering (CSE) Department at City University is designed to provide students with the skills and knowledge required to excel in the dynamic field of technology. With a curriculum focused on practical learning, innovation, and research, the department offers:\n\n
+- Modern Labs: Fully equipped computer labs with the latest hardware and software.\n
+- Experienced Faculty: A team of highly qualified professors and industry experts.\n
+- Internship Opportunities: Collaborations with top companies to provide hands-on experience.\n
+- Project-Based Learning: Develop real-world projects to enhance technical skills.\n\n
+Admission Details\n
+- Total Program Fee: BDT 340,000 (Includes tuition fees, lab fees, and other necessary costs.)\n
+- Yearly Semesters: 2 Semesters per Year (Spring and Fall Semesters)\n
+- Program Duration: 4 Years (8 Semesters)\n\n
+Scholarship Opportunities\n
+City University offers various scholarships and financial aid programs based on:\n
+- Academic performance (HSC/SSC results).\n
+- Merit-based exams.\n
+- Need-based scholarships.\n\n
+Facilities for Students\n
+- State-of-the-Art Campus: Wi-Fi-enabled campus, library, and research facilities.\n
+- Clubs and Societies: Participate in tech clubs, coding competitions, and hackathons.\n
+- Career Support: Career guidance and placement services after graduation.\n\n
+Why Choose CSE at City University?\n
+- Job-Oriented Curriculum: Designed to meet industry demands.\n
+- Affordable Tuition Fees: Competitive program costs for high-quality education.\n
+- Supportive Learning Environment: Personalized guidance from faculty.\n
+- Focus on Emerging Technologies: AI, Data Science, IoT, Cybersecurity, and more.\n\n
+How to Apply?\n
+1. Visit the official website: City University Admission Portal.\n
+2. Collect the application form online or from the admission office.\n
+3. Submit your SSC and HSC certificates, passport-sized photographs, and application fees.\n
+4. Appear for the admission test (if applicable).\n
+5. Confirm your seat by completing the enrollment process.\n"
+            tools:ignore="HardcodedText" />
+    </ScrollView>
+</LinearLayout>

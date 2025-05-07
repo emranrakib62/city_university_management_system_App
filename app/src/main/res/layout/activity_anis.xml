@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityAnis">
+
+    <!-- Image Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anis"
+            android:contentDescription="Profile picture of Engr S M Anisur Rahman" />
+    </LinearLayout>
+
+    <!-- Scrollable Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Engr S M Anisur Rahman"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- Designation -->
+            <TextView
+                android:id="@+id/textViewDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Associate Professor and Head"
+                android:textSize="18sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Contact Information -->
+            <TextView
+                android:id="@+id/textViewContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="anis972@gmail.com\n+8801678042474"
+                android:paddingBottom="16dp" />
+
+            <!-- Faculty and Department -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty and Department Affiliation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty of Science and Engineering\nDepartment of Computer Science and Engineering"
+                android:paddingBottom="16dp" />
+
+            <!-- Degrees -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Degrees and Universities Attended"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MSc in Computer Science and Engineering from Bangladesh University of Professionals (BUP)\n\nBSc in Computer Science and Engineering from Dhaka University (DU)\n\nHSC from Jhenidah Cadet College, Jessore Board\n\nSSC from Jhenidah Cadet College, Jessore Board"
+                android:paddingBottom="16dp" />
+
+            <!-- Short Introduction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Introduction"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Engr S M Anisur Rahman is currently working as Associate Professor and Head at the Department of Computer Science and Engineering, City University. With a commendable teaching career spanning over 12 years, he has established a remarkable track record in the academic field. He holds a Master of Science (MSc) in Computer Science and Engineering from the Bangladesh University of Professionals (BUP), Bangladesh, and a Bachelor of Science (BSc) in Computer Science and Engineering from Dhaka University (DU), graduating with distinction. An esteemed professional member of several prestigious organizations, he contributes to the Institute of Electrical and Electronics Engineers (IEEE), The Institution of Engineers, Bangladesh (IEB), and the IEB CSE Division. Further enriching his profile, he is a proud life member of the Jhenidah Ex-Cadets Association (JEXCA) alumni."
+                android:paddingBottom="16dp" />
+
+            <!-- Teaching Experience -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teaching Experience"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Associate Professor and Head, Department of CSE, City University, 26 Jan 2024 – Present.\n\n2. Research Director (Science and Technology) and Associate Professor, Bangladesh Institute of Maritime Research and Development (BIMRAD), 12 Aug 2022 – 12 Nov 2023.\n\n3. Associate Professor, Department of Computer Science and Engineering (CSE), Faculty of Electrical and Computer Engineering (FECE), Military Institute of Science and Technology (MIST), 28 Oct 2020 – 11 Aug 2022.\n\n4. Assistant Professor, Department of Computer Science and Engineering (CSE), Faculty of Electrical and Computer Engineering (FECE), Military Institute of Science and Technology (MIST), 19 Jun 2012 – 27 Oct 2020.\n\n5. Senior Lecturer, Bangladesh Navy Sailor Training School, BNS TITUMIR, 20 Oct 2011 – 16 Jun 2012.\n\n6. Lecturer, Bangladesh Navy Hydrographic School, BNS ISSA KHAN, 19 Jul 1998 – 13 Nov 1997."
+                android:paddingBottom="16dp" />
+
+            <!-- Research Interest -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Research Interest"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Focuses on Human-Computer Interaction, Software Engineering, Operating Systems, Computer Architecture and Computer Security"
+                android:paddingBottom="16dp" />
+
+            <!-- Publications -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publications"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Exploring Natural Life Conservation using Machine Learning and IoT-based Sound Classification.\n\n2. Exploring and Comparing the Performance of Design Methods Used for Information Intensive Websites.\n\n..."
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

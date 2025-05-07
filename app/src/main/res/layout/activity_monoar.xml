@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMonoar"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mon"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name and Designation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monoara Sultana Morzina"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecturer"
+                android:textSize="18sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Contact Information -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="morzina.ju@gmail.com\n+880 1675869610"
+                android:paddingBottom="16dp" />
+
+            <!-- Faculty and Department -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty and Department Affiliation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty of Science and Engineering\nDepartment of Computer Science and Engineering"
+                android:paddingBottom="16dp" />
+
+            <!-- Degrees and Universities -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Degrees and Universities Attended"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• M.Sc in Computer Science and Engineering from Jahangirnagar University\n\n• B.Sc in Computer Science and Engineering from Jahangirnagar University\n\n• HSC from Savar Model College, Savar, Dhaka\n\n• SSC from Begun Bary High School, Savar, Dhaka"
+                android:paddingBottom="16dp" />
+
+            <!-- Short Introduction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Introduction"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monoara Sultana Morzina is currently working as a Lecturer in the Department of Computer Science and Engineering at City University. Her hometown is Chandpur. She completed her SSC and HSC from Begun Bary High School and Savar Model College respectively. She earned her Bachelor of Science (B.Sc) in Computer Science and Engineering from Jahangirnagar University with an excellent academic result. Additionally, she completed her Master of Science (M.Sc) in Computer Science and Engineering from Jahangirnagar University. She was awarded a Master’s Research Fellowship from the National Science and Technology (NST). She also received M.Sc and B.Sc Merit Scholarships from Jahangirnagar University. Her research domains are E-Commerce, Data Mining, and Digital Systems."
+                android:paddingBottom="16dp" />
+
+            <!-- Teaching Experience -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teaching Experience"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Lecturer, Department of Computer Science and Engineering, City University (08 August 2023 – Present)\n\n2. Lecturer, Department of Computer Science and Engineering, Manarat International University (10 October 2022 – 07 August 2023)"
+                android:paddingBottom="16dp" />
+
+            <!-- Research Interests -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Research Interests"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. E-Commerce\n2. Data Mining\n3. Graph Theory\n4. Computer Security\n5. Machine Learning"
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

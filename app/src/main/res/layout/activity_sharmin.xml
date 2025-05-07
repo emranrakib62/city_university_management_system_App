@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitySharmin">
+
+    <!-- Top Image Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sar"
+            android:scaleType="centerCrop"
+             />
+    </LinearLayout>
+
+    <!-- Scrollable Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name and Designation -->
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sharmin Akter"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecturer"
+                android:textSize="18sp"
+                android:paddingBottom="16dp" />
+
+            <!-- Contact Information -->
+            <TextView
+                android:id="@+id/textViewContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sharmin.cse@cityuniversity.edu.bd\n+8801744960557"
+                android:paddingBottom="16dp" />
+
+            <!-- Faculty and Department -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty and Department Affiliation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty of Science and Engineering\nDepartment of Computer Science and Engineering"
+                android:paddingBottom="16dp" />
+
+            <!-- Degrees and Universities -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Degrees and Universities Attended"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PhD in Information and Communication Technology at BUET (On going)\n\nMSc in Computer Science and Engineering from United International University\n\nBSc in Computer Science and Engineering from City University"
+                android:paddingBottom="16dp" />
+
+            <!-- Short Introduction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Introduction"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sharmin Akter received her BSc degree in Computer Science and Engineering from City University, Bangladesh and MSc degree in Computer Science and Engineering from United International University. Her research interests include IoT, software coding, AI, Data Mining, and Machine Learning. Currently, she is conducting research on Machine Learning and Data Mining. She teaches senior courses such as Digital System Design, System Programming, Internet and Internet Technology, and also teaches entry-level programming courses."
+                android:paddingBottom="16dp" />
+
+            <!-- Teaching Experience -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teaching Experience"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecturer, City University, Department of CSE, from August 2017 to Present.\n\nGuest Lecturer at MH Samorita Nursing College from 02 May, 2017 – 31 October, 2023."
+                android:paddingBottom="16dp" />
+
+            <!-- Research Interests -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Research Interests"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IoT, Machine Learning, Data Mining, AI"
+                android:paddingBottom="16dp" />
+
+            <!-- Publications -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publications"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Rahman, M., Islam, M. R., Akter, S., Akter, S., Islam, L., and Xu, G. “DiaVis: Exploration and Analysis of Diabetes through Visual Interactive System.” Human-Centric Intelligent Systems (HCIS), Volume 1, Issue 3-4, December 2021.\n\n2. Sharmin Akter, Md. Imtiaz Nayeem."
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
