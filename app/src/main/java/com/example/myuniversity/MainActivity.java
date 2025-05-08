@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView animatedTextView;
     private ImageSlider imageSlider;
 
-    // Data for the grid
+
     private final int[] images = {
             R.drawable.ima, R.drawable.main1, R.drawable.main3,
             R.drawable.mas, R.drawable.main2, R.drawable.main4, R.drawable.main5, R.drawable.fin
@@ -136,6 +136,10 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(images[position]);
             titleView.setText(titles[position]);
 
+            // Apply animation from bottom to top
+            Animation animation = AnimationUtils.loadAnimation(context, R.anim.grid_item_animation);
+            convertView.startAnimation(animation);
+
             // Set onClick listener for each item
             convertView.setOnClickListener(v -> {
                 Intent intent;
@@ -173,4 +177,4 @@ public class MainActivity extends AppCompatActivity {
             return convertView;
         }
     }
-}
+    }
