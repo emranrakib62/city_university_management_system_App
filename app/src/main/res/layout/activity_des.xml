@@ -7,10 +7,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
+    android:background="@color/purple_200"
     tools:context=".DesActivity">
 
     <!-- Image Section -->
     <ImageView
+
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
@@ -18,20 +21,26 @@
         android:contentDescription="Image Description" />
 
     <!-- Scrollable Text Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#F5C1F28E"
+        android:layout_height="wrap_content">
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:fillViewport="true">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:lineSpacingExtra="4dp"
             android:padding="8dp"
             android:scrollbars="vertical"
-            android:textColor="@android:color/black"
             android:text="City University of Bangladesh – CSE Department Overview\n\n
 About the CSE Department\n
 The Computer Science and Engineering (CSE) Department at City University is designed to provide students with the skills and knowledge required to excel in the dynamic field of technology. With a curriculum focused on practical learning, innovation, and research, the department offers:\n\n
@@ -63,6 +72,9 @@ How to Apply?\n
 3. Submit your SSC and HSC certificates, passport-sized photographs, and application fees.\n
 4. Appear for the admission test (if applicable).\n
 5. Confirm your seat by completing the enrollment process.\n"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
             tools:ignore="HardcodedText" />
     </ScrollView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

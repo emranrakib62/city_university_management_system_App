@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import soup.neumorphism.NeumorphCardView;
+
 public class DepartmentActivity extends AppCompatActivity {
     private Button button20;
 
@@ -17,9 +19,9 @@ public class DepartmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_department);
 
-        // Initialize button20
-        button20 = findViewById(R.id.button20);
 
+
+        NeumorphCardView button20 = findViewById(R.id.button20);
         // Set onClickListener for button20
         button20.setOnClickListener(new View.OnClickListener() {
             @Override
