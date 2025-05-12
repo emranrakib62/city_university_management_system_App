@@ -77,10 +77,10 @@ public class MainActivity extends AppCompatActivity {
     // Helper method to set up the image slider
     private void setupImageSlider() {
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel(R.drawable.city1, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.city2, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.city3, ScaleTypes.FIT));
-        slideModels.add(new SlideModel(R.drawable.city4, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.city11, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.city12, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.city13, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.city15, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.city5, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.city6, ScaleTypes.FIT));
         slideModels.add(new SlideModel(R.drawable.city7, ScaleTypes.FIT));

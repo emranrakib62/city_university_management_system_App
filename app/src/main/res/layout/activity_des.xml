@@ -24,8 +24,7 @@
         app:neumorph_shadowColorDark="#A3B1C6"
         app:neumorph_backgroundColor="#EBE2E5"
         app:neumorph_cornerFamily="rounded"
-
-        app:neumorph_cornerSize="16dp">
+        app:neumorph_cornerSize="13dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,14 +38,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="5dp"
+
         app:neumorph_shapeType="pressed"
         app:neumorph_shadowElevation="6dp"
         app:neumorph_shadowColorLight="#FFFFFF"
         app:neumorph_shadowColorDark="#A3B1C6"
         app:neumorph_backgroundColor="#EBE2E5"
         app:neumorph_cornerFamily="rounded"
-        app:neumorph_cornerSize="16dp">
+        app:neumorph_cornerSize="13dp">
 
         <ScrollView
             android:layout_width="match_parent"

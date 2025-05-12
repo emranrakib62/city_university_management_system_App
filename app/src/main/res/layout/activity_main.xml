@@ -11,6 +11,24 @@
     tools:context=".MainActivity">
 
     <!-- Top Section with Horizontal ImageView -->
+
+    <soup.neumorphism.NeumorphCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shadowColorLight="#FAE80F"
+        app:neumorph_shadowColorDark="#E6FF40"
+        app:neumorph_backgroundColor="#E0E0E0"
+        app:neumorph_cornerFamily="rounded"
+        app:neumorph_cornerSize="16dp">
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="170dp"
@@ -35,12 +53,14 @@
             android:src="@drawable/cv" />
     </LinearLayout>
 
+    </soup.neumorphism.NeumorphCardView>
+
     <!-- Animated TextView Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="2dp">
 
         <TextView
             android:id="@+id/animatedTextView"
@@ -51,7 +71,7 @@
             android:singleLine="true"
             android:scrollHorizontally="true"
             android:text="Admission Open for Spring 2025 at City University "
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center_vertical" />
     </LinearLayout>
@@ -60,7 +80,7 @@
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
         android:horizontalSpacing="14dp"
