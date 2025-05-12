@@ -63,18 +63,20 @@
         android:layout_marginTop="2dp">
 
         <TextView
+            android:textColor="@color/purple_200"
             android:id="@+id/animatedTextView"
             android:layout_width="match_parent"
             android:layout_height="32dp"
-
             android:marqueeRepeatLimit="marquee_forever"
             android:singleLine="true"
             android:scrollHorizontally="true"
-            android:text="Admission Open for Spring 2025 at City University "
-            android:textSize="20sp"
+            android:text="Admission Open for Spring 2025 at City University"
+            android:textSize="17sp"
             android:textStyle="bold"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:ellipsize="marquee" />
     </LinearLayout>
+
 
     <!-- GridView Section -->
     <GridView

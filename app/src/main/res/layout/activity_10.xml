@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity10"
+    android:layout_margin="5dp"
     android:orientation="vertical">
 
 
+
+
+
         <ListView
-            android:layout_marginTop="10dp"
             android:id="@+id/listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="@color/lavender"
-            android:dividerHeight="14dp" />
+            android:layout_height="wrap_content"
+            android:dividerHeight="20dp" />
 
     </LinearLayout>
 
