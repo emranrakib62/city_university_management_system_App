@@ -7,56 +7,63 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
+
     android:background="@color/black"
     tools:context=".DesActivity">
 
     <!-- Image Section -->
     <soup.neumorphism.NeumorphCardView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="16dp"
-        android:padding="20dp"
-        app:neumorph_shapeType="basin"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        app:neumorph_shapeType="pressed"
         android:theme="@style/MaterialAlertDialog.Material3.Title.Text"
         app:neumorph_shadowElevation="6dp"
         app:neumorph_shadowColorLight="#FFFFFF"
         app:neumorph_shadowColorDark="#A3B1C6"
-        app:neumorph_backgroundColor="#E0E0E0"
+        app:neumorph_backgroundColor="#EBE2E5"
         app:neumorph_cornerFamily="rounded"
+
         app:neumorph_cornerSize="16dp">
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="20dp"
-
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-           android:text="WELCOME TO THE DEPARTMENT OF CSE"
+            android:src="@drawable/cselogo"
+            android:scaleType="centerCrop"
             />
 
     </soup.neumorphism.NeumorphCardView>
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="10dp"
+    <soup.neumorphism.NeumorphCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        app:cardCornerRadius="10dp"
-        app:cardBackgroundColor="#F5F8FA71"
-        android:layout_height="wrap_content">
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="5dp"
-        android:fillViewport="true">
+        app:neumorph_shapeType="pressed"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shadowColorLight="#FFFFFF"
+        app:neumorph_shadowColorDark="#A3B1C6"
+        app:neumorph_backgroundColor="#EBE2E5"
+        app:neumorph_cornerFamily="rounded"
+        app:neumorph_cornerSize="16dp">
 
-        <TextView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="4dp"
-            android:padding="8dp"
-            android:scrollbars="vertical"
-            android:text="City University of Bangladesh – CSE Department Overview\n\n
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:fillViewport="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="8dp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:text="City University of Bangladesh – CSE Department Overview\n\n
 About the CSE Department\n
 The Computer Science and Engineering (CSE) Department at City University is designed to provide students with the skills and knowledge required to excel in the dynamic field of technology. With a curriculum focused on practical learning, innovation, and research, the department offers:\n\n
 - Modern Labs: Fully equipped computer labs with the latest hardware and software.\n
@@ -86,10 +93,9 @@ How to Apply?\n
 2. Collect the application form online or from the admission office.\n
 3. Submit your SSC and HSC certificates, passport-sized photographs, and application fees.\n
 4. Appear for the admission test (if applicable).\n
-5. Confirm your seat by completing the enrollment process.\n"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            tools:ignore="HardcodedText" />
-    </ScrollView>
-    </androidx.cardview.widget.CardView>
+5. Confirm your seat by completing the enrollment process.\n" />
+
+        </ScrollView>
+    </soup.neumorphism.NeumorphCardView>
+
 </LinearLayout>
