@@ -7,20 +7,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@color/purple_200"
+    android:background="@color/black"
     tools:context=".DesActivity">
 
     <!-- Image Section -->
-    <ImageView
-
-        android:layout_marginTop="5dp"
+    <soup.neumorphism.NeumorphCardView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img"
-        android:contentDescription="Image Description" />
+        android:layout_margin="16dp"
+        android:padding="20dp"
+        app:neumorph_shapeType="basin"
+        android:theme="@style/MaterialAlertDialog.Material3.Title.Text"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_shadowColorLight="#FFFFFF"
+        app:neumorph_shadowColorDark="#A3B1C6"
+        app:neumorph_backgroundColor="#E0E0E0"
+        app:neumorph_cornerFamily="rounded"
+        app:neumorph_cornerSize="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp"
 
-    <!-- Scrollable Text Section -->
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+           android:text="WELCOME TO THE DEPARTMENT OF CSE"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
     <androidx.cardview.widget.CardView
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"

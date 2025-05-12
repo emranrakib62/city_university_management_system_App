@@ -26,6 +26,7 @@
             app:neumorph_shadowColorLight="#FFD740"
             android:layout_marginTop="25sp"
             android:id="@+id/button1"
+
             android:layout_gravity="center"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
