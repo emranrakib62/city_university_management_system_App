@@ -1,5 +1,6 @@
 package com.example.myuniversity;
 
+import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -24,8 +25,11 @@ import com.denzcoskun.imageslider.models.SlideModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import soup.neumorphism.NeumorphCardView;
+
 public class MainActivity extends AppCompatActivity {
     private GridView gridView;
+    private NeumorphCardView neumorphCard;
     private TextView animatedTextView;
     private ImageSlider imageSlider;
 
@@ -43,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
 
         // Check if the user is logged in
         SharedPreferences sharedPreferences = getSharedPreferences("MyUniversityPrefs", Context.MODE_PRIVATE);
@@ -63,18 +69,45 @@ public class MainActivity extends AppCompatActivity {
         animatedTextView = findViewById(R.id.animatedTextView);
         imageSlider = findViewById(R.id.imageSlider);
 
-        // Set up the image slider
+        neumorphCard = findViewById(R.id.myNeumorphCard);
+
+
+
+
+        ValueAnimator animator = ValueAnimator.ofFloat(6f, 1f, 6f);
+        animator.setDuration(4000);
+        animator.setRepeatCount(ValueAnimator.INFINITE);
+        animator.setRepeatMode(ValueAnimator.REVERSE);
+
+        animator.addUpdateListener(animation -> {
+            float value = (float) animation.getAnimatedValue();
+            neumorphCard.setShadowElevation(value);
+        });
+
+        animator.start();
+
+
+
+
+
+
+
+
+
+
+
+
         setupImageSlider();
 
-        // Start animation for the TextView
+
         startTextViewAnimation();
 
-        // Set custom adapter for the GridView
+
         GridAdapter adapter = new GridAdapter(this, images, titles);
         gridView.setAdapter(adapter);
     }
 
-    // Helper method to set up the image slider
+
     private void setupImageSlider() {
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.city11, ScaleTypes.FIT));
@@ -88,13 +121,13 @@ public class MainActivity extends AppCompatActivity {
         imageSlider.setImageList(slideModels);
     }
 
-    // Helper method to start animation on the TextView
+
     private void startTextViewAnimation() {
         Animation marqueeAnimation = AnimationUtils.loadAnimation(this, R.anim.marquee_animation);
         animatedTextView.startAnimation(marqueeAnimation);
     }
 
-    // Custom adapter for the GridView
+
     public class GridAdapter extends BaseAdapter {
         private final Context context;
         private final int[] images;
@@ -128,19 +161,19 @@ public class MainActivity extends AppCompatActivity {
                 convertView = inflater.inflate(R.layout.item, parent, false);
             }
 
-            // Initialize views
+
             ImageView imageView = convertView.findViewById(R.id.imageView);
             TextView titleView = convertView.findViewById(R.id.titleTextView);
 
-            // Set data
+
             imageView.setImageResource(images[position]);
             titleView.setText(titles[position]);
 
-            // Apply animation from bottom to top
+
             Animation animation = AnimationUtils.loadAnimation(context, R.anim.grid_item_animation);
             convertView.startAnimation(animation);
 
-            // Set onClick listener for each item
+
             convertView.setOnClickListener(v -> {
                 Intent intent;
                 switch (position) {

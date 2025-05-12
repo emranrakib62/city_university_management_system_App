@@ -11,6 +11,7 @@
     app:neumorph_shadowColorDark="#A3B1C6"
     app:neumorph_backgroundColor="#E0E0E0"
     app:neumorph_cornerFamily="rounded"
+
     app:neumorph_cornerSize="16dp">
 
     <LinearLayout

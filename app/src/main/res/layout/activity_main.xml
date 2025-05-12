@@ -8,9 +8,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="5dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+   >
 
     <!-- Top Section with Horizontal ImageView -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/black"
+        >
+
+
+
+
 
     <soup.neumorphism.NeumorphCardView
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,13 +30,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        app:neumorph_shapeType="flat"
-        app:neumorph_shadowElevation="6dp"
-        app:neumorph_shadowColorLight="#FAE80F"
-        app:neumorph_shadowColorDark="#E6FF40"
+        android:id="@+id/myNeumorphCard"
+        app:neumorph_shapeType="basin"
+        app:neumorph_shadowElevation="20dp"
+
+        app:neumorph_shadowColorLight="#DEEF38"
+        app:neumorph_shadowColorDark="#11E949"
+
         app:neumorph_backgroundColor="#E0E0E0"
         app:neumorph_cornerFamily="rounded"
-        app:neumorph_cornerSize="16dp">
+        app:neumorph_cornerSize="16dp"
+        app:neumorph_lightSource="leftTop"
+      >
 
 
 
@@ -33,7 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:orientation="horizontal"
-        android:layout_marginTop="3dp">
+        android:layout_marginTop="3dp"
+        >
 
         <com.denzcoskun.imageslider.ImageSlider
             android:id="@+id/imageSlider"
@@ -54,6 +72,9 @@
     </LinearLayout>
 
     </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
 
     <!-- Animated TextView Section -->
     <LinearLayout
@@ -88,6 +109,7 @@
         android:horizontalSpacing="14dp"
         android:numColumns="2"
         android:padding="8dp"
+
         android:stretchMode="columnWidth"
         android:verticalSpacing="14dp" />
 </LinearLayout>
