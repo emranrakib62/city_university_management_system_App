@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/black"
+
         >
 
 
@@ -33,8 +33,7 @@
         android:padding="12dp"
         android:id="@+id/myNeumorphCard"
         app:neumorph_shapeType="basin"
-        app:neumorph_shadowElevation="20dp"
-
+        app:neumorph_shadowElevation="30dp"
         app:neumorph_shadowColorLight="#DEEF38"
         app:neumorph_shadowColorDark="#11E949"
 
