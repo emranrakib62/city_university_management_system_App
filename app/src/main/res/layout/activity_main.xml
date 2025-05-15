@@ -32,7 +32,7 @@
             android:layout_margin="3dp"
             android:padding="12dp"
             app:neumorph_shapeType="basin"
-            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shadowElevation="25dp"
             app:neumorph_backgroundColor="#E0E0E0"
             app:neumorph_cornerFamily="rounded"
             app:neumorph_cornerSize="16dp"
