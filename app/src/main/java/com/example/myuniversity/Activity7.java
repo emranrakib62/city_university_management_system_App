@@ -1,5 +1,6 @@
 package com.example.myuniversity;
 
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,8 +12,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Activity7 extends AppCompatActivity {
+import soup.neumorphism.NeumorphCardView;
 
+public class Activity7 extends AppCompatActivity {
+    private NeumorphCardView neumorphButton;
+    private NeumorphCardView neumorphButton1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,5 +44,45 @@ public class Activity7 extends AppCompatActivity {
             Intent intent = new Intent(Activity7.this, ArtsFacultyActivity.class);
             startActivity(intent);
         });
+
+
+        neumorphButton1 = findViewById(R.id.neumorphButton1);
+
+        neumorphButton = findViewById(R.id.neumorphButton);
+
+        ValueAnimator animator = ValueAnimator.ofFloat(6f, 1f, 6f);
+        animator.setDuration(8000); // 3 seconds for smooth looping
+        animator.setRepeatCount(ValueAnimator.INFINITE);
+        animator.setRepeatMode(ValueAnimator.REVERSE);
+
+        animator.addUpdateListener(animation -> {
+            float value = (float) animation.getAnimatedValue();
+            neumorphButton.setShadowElevation(value);
+        });
+
+        animator.start();
+
+
+
+
+
+        neumorphButton1 = findViewById(R.id.neumorphButton1);
+
+        ValueAnimator animator1 = ValueAnimator.ofFloat(6f, 1f, 6f);
+        animator1.setDuration(8000); // 3 seconds for smooth looping
+        animator1.setRepeatCount(ValueAnimator.INFINITE);
+        animator1.setRepeatMode(ValueAnimator.REVERSE);
+
+        animator1.addUpdateListener(animation -> {
+            float value = (float) animation.getAnimatedValue();
+            neumorphButton1.setShadowElevation(value);
+        });
+
+        animator1.start();
+
+
+
+
+
     }
 }

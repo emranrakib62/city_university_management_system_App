@@ -8,20 +8,55 @@
     tools:context=".Activity7"
     android:orientation="vertical">
 
-    <Button
-        android:layout_marginTop="130dp"
-        android:id="@+id/button1"
-        android:textSize="28dp"
-        android:backgroundTint="@color/teal_200"
-       android:textColor="@color/black"
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_marginTop="100dp"
+        android:id="@+id/neumorphButton"
+        android:layout_width="240dp"
+        android:layout_height="230dp"
         android:layout_gravity="center"
-        android:layout_width="215dp"
-        android:layout_height="210dp"
-        android:text="Science Faculty"
-        android:textStyle="bold"/>
+        android:clickable="true"
+        android:focusable="true"
+        app:neumorph_shadowColorLight="#FFD859"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shadowColorDark="#BBFF00"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="8dp"
+        app:neumorph_backgroundColor="#ECECEC"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="215dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:text="Science Faculty"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_marginTop="40dp"
+        android:id="@+id/neumorphButton1"
+        android:layout_width="240dp"
+        android:layout_height="237dp"
+        android:layout_gravity="center"
+        app:neumorph_shadowColorLight="#FFD740"
+       app:neumorph_shadowColorDark="#10EE00"
+        android:clickable="true"
+        android:focusable="true"
+        app:neumorph_shapeType="flat"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="8dp"
+        app:neumorph_backgroundColor="#ECECEC"
+      >
+
+
 
     <Button
-        android:layout_marginTop="20dp"
+
         android:id="@+id/button2"
         android:textSize="28dp"
         android:backgroundTint="@color/purple_200"
@@ -31,5 +66,5 @@
         android:layout_height="210dp"
         android:text="Arts Faculty"
         android:textStyle="bold"/>
-
+    </soup.neumorphism.NeumorphCardView>
 </LinearLayout>
