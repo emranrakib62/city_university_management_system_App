@@ -70,7 +70,6 @@
     </LinearLayout>
 
 
-    <!-- Animated TextView Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -78,22 +77,26 @@
         android:layout_marginTop="0dp">
 
         <TextView
-            android:textColor="@color/black"
             android:id="@+id/animatedTextView"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
             android:marqueeRepeatLimit="marquee_forever"
             android:singleLine="true"
             android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:text="Admission Open for Spring 2025 at City University"
-            android:textSize="17sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:gravity="center_vertical"
-            android:ellipsize="marquee" />
+            android:textColor="@color/black"
+
+            />
     </LinearLayout>
 
 
-    <!-- GridView Section -->
+
+
 
 
     <soup.neumorphism.NeumorphCardView
@@ -101,7 +104,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginTop="0dp"
-        android:padding="3dp"
+        android:padding="0dp"
         app:neumorph_shapeType="basin"
         app:neumorph_shadowElevation="6dp"
 app:neumorph_shadowColorDark="#EBEBE1"

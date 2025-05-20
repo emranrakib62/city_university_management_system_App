@@ -18,7 +18,7 @@
         android:focusable="true"
         app:neumorph_shapeType="flat"
         app:neumorph_shadowColorLight="#FFD740"
-        app:neumorph_shadowColorDark="#448AFF"
+        app:neumorph_shadowColorDark="#01060F"
         app:neumorph_lightSource="leftTop"
         app:neumorph_shadowElevation="5dp"
         app:neumorph_backgroundColor="#ECECEC">

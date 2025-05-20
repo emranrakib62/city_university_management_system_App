@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         startTextViewAnimation();
 
 
+
         GridAdapter adapter = new GridAdapter(this, images, titles);
         gridView.setAdapter(adapter);
     }
@@ -125,6 +126,8 @@ public class MainActivity extends AppCompatActivity {
     private void startTextViewAnimation() {
         Animation marqueeAnimation = AnimationUtils.loadAnimation(this, R.anim.marquee_animation);
         animatedTextView.startAnimation(marqueeAnimation);
+
+
     }
 
 
