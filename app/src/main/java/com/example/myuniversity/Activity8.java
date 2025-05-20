@@ -10,6 +10,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import soup.neumorphism.NeumorphButton;
+import soup.neumorphism.NeumorphCardView;
+
 public class Activity8 extends AppCompatActivity {
 
     @Override
@@ -20,22 +23,23 @@ public class Activity8 extends AppCompatActivity {
 
 
 
-        // Set up button1 click listener to navigate to Activity30
-        Button button1 = findViewById(R.id.button1);
-        Button button2 = findViewById(R.id.button2);
-        Button button3 = findViewById(R.id.button3);
-        button1.setOnClickListener(view -> {
+        // Set up button1 click listener to navigate to Activity30 neumorphButton1
+        NeumorphCardView myButton = findViewById(R.id.neumorphButton);
+        NeumorphCardView myButton1 = findViewById(R.id.neumorphButton1);
+        NeumorphCardView myButton2 = findViewById(R.id.neumorphButton2);
+
+        myButton.setOnClickListener(view -> {
             Intent intent = new Intent(Activity8.this, Activity30.class);
             startActivity(intent);
         });
 
 
-        button2.setOnClickListener(view -> {
+        myButton1.setOnClickListener(view -> {
             Intent intent = new Intent(Activity8.this, Activity31.class);
             startActivity(intent);
         });
 
-        button3.setOnClickListener(view -> {
+        myButton2.setOnClickListener(view -> {
             Intent intent = new Intent(Activity8.this, Activity32.class);
             startActivity(intent);
         });

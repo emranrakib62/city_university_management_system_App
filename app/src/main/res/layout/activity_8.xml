@@ -8,45 +8,84 @@
     tools:context=".Activity7"
     android:orientation="vertical">
 
-    <Button
-        android:layout_marginTop="20dp"
-        android:id="@+id/button1"
-        android:textSize="28dp"
-        android:clickable="true"
-
-        android:backgroundTint="@color/cardview_shadow_start_color"
-        android:textColor="@color/black"
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_width="215dp"
-        android:layout_height="210dp"
-        android:text="Admission Requirment and Scholarship policy"
-        android:textStyle="bold"/>
-
-    <Button
+        android:layout_marginTop="50dp"
         android:clickable="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/button2"
-        android:textSize="28dp"
-        android:backgroundTint="@color/material_dynamic_neutral20"
-        android:textColor="@color/black"
+        android:focusable="true"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shadowColorLight="#FFD740"
+        app:neumorph_shadowColorDark="#448AFF"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_backgroundColor="#ECECEC">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Admission Requirment and Scholarship Policy"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphButton1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_width="215dp"
-        android:layout_height="210dp"
-        android:text="Hall information"
-        android:textStyle="bold"/>
-
-
-    <Button
+        android:layout_marginTop="40dp"
         android:clickable="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/button3"
-        android:textSize="28dp"
-        android:backgroundTint="@color/purple_200"
-        android:textColor="@color/black"
+        android:focusable="true"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shadowColorLight="#FFD740"
+        app:neumorph_shadowColorDark="#EE00D6"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_backgroundColor="#ECECEC">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hall \nInformation"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphButton2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_width="215dp"
-        android:layout_height="210dp"
-        android:text="Social Media Platform"
-        android:textStyle="bold"/>
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shadowColorLight="#FFD740"
+        app:neumorph_shadowColorDark="#5F2AF4"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_backgroundColor="#ECECEC">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Social Media Platform"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </soup.neumorphism.NeumorphCardView>
 
 </LinearLayout>

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="5dp"
+
     tools:context=".MainActivity"
    >
 
@@ -26,7 +26,7 @@
             android:layout_height="200dp"
             android:id="@+id/myNeumorphCard"
             android:layout_margin="3dp"
-            android:padding="12dp"
+            android:padding="10dp"
             app:neumorph_shapeType="basin"
             app:neumorph_shadowElevation="25dp"
             app:neumorph_backgroundColor="#E0E0E0"
@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="2dp">
+        android:layout_marginTop="0dp">
 
         <TextView
             android:textColor="@color/black"
@@ -101,10 +101,10 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginTop="0dp"
-        android:padding="5dp"
+        android:padding="3dp"
         app:neumorph_shapeType="basin"
         app:neumorph_shadowElevation="6dp"
-app:neumorph_shadowColorDark="#D6E913"
+app:neumorph_shadowColorDark="#EBEBE1"
         app:neumorph_cornerFamily="rounded"
         app:neumorph_cornerSize="10dp">
 

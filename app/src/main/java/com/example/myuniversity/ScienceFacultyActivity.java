@@ -13,7 +13,7 @@ public class ScienceFacultyActivity extends AppCompatActivity {
 
         TextView questionTextView = findViewById(R.id.questionTextView);
 
-        // Final Question Set
+
         String questionSet = "Final Question\n\n\n"
                 + "City University\n"
                 + "Department of Computer Science and Engineering\n"
