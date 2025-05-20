@@ -78,7 +78,7 @@
         android:layout_marginTop="2dp">
 
         <TextView
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:id="@+id/animatedTextView"
             android:layout_width="match_parent"
             android:layout_height="32dp"
@@ -94,6 +94,23 @@
 
 
     <!-- GridView Section -->
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        app:neumorph_shapeType="basin"
+        app:neumorph_shadowElevation="6dp"
+app:neumorph_shadowColorDark="#D6E913"
+        app:neumorph_cornerFamily="rounded"
+        app:neumorph_cornerSize="10dp">
+
+
+
+
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
@@ -102,8 +119,9 @@
         android:gravity="center"
         android:horizontalSpacing="14dp"
         android:numColumns="2"
-        android:padding="8dp"
+        android:padding="12dp"
 
         android:stretchMode="columnWidth"
-        android:verticalSpacing="14dp" />
+        android:verticalSpacing="8dp" />
+    </soup.neumorphism.NeumorphCardView>
 </LinearLayout>

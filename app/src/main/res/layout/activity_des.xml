@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp"
+
 
     android:background="@color/black"
     tools:context=".DesActivity">
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         app:neumorph_shapeType="pressed"
         android:theme="@style/MaterialAlertDialog.Material3.Title.Text"
         app:neumorph_shadowElevation="6dp"
@@ -24,7 +24,7 @@
         app:neumorph_shadowColorDark="#A3B1C6"
         app:neumorph_backgroundColor="#EBE2E5"
         app:neumorph_cornerFamily="rounded"
-        app:neumorph_cornerSize="13dp">
+        app:neumorph_cornerSize="10dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
         app:neumorph_shadowColorDark="#A3B1C6"
         app:neumorph_backgroundColor="#EBE2E5"
         app:neumorph_cornerFamily="rounded"
-        app:neumorph_cornerSize="13dp">
+        app:neumorph_cornerSize="10dp">
 
         <ScrollView
             android:layout_width="match_parent"
