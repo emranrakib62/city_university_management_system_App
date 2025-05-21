@@ -135,11 +135,13 @@ public class MainActivity extends AppCompatActivity {
         private final Context context;
         private final int[] images;
         private final String[] titles;
+        private final boolean[] animatedPositions;
 
         public GridAdapter(Context context, int[] images, String[] titles) {
             this.context = context;
             this.images = images;
             this.titles = titles;
+            this.animatedPositions = new boolean[titles.length];
         }
 
         @Override
@@ -149,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Object getItem(int position) {
-            return null;
+            return titles[position];
         }
 
         @Override
@@ -164,48 +166,32 @@ public class MainActivity extends AppCompatActivity {
                 convertView = inflater.inflate(R.layout.item, parent, false);
             }
 
-
             ImageView imageView = convertView.findViewById(R.id.imageView);
             TextView titleView = convertView.findViewById(R.id.titleTextView);
-
 
             imageView.setImageResource(images[position]);
             titleView.setText(titles[position]);
 
-
-            Animation animation = AnimationUtils.loadAnimation(context, R.anim.grid_item_animation);
-            convertView.startAnimation(animation);
-
+            // Animate once per item
+            if (!animatedPositions[position]) {
+                Animation animation = AnimationUtils.loadAnimation(context,
+                        (position % 2 == 0) ? R.anim.slide_in_left : R.anim.slide_in_right);
+                convertView.startAnimation(animation);
+                animatedPositions[position] = true;
+            }
 
             convertView.setOnClickListener(v -> {
                 Intent intent;
                 switch (position) {
-                    case 0:
-                        intent = new Intent(context, Activity1.class);
-                        break;
-                    case 1:
-                        intent = new Intent(context, Activity2.class);
-                        break;
-                    case 2:
-                        intent = new Intent(context, Activity3.class);
-                        break;
-                    case 3:
-                        intent = new Intent(context, Activity4.class);
-                        break;
-                    case 4:
-                        intent = new Intent(context, Activity5.class);
-                        break;
-                    case 5:
-                        intent = new Intent(context, Activity6.class);
-                        break;
-                    case 6:
-                        intent = new Intent(context, Activity7.class);
-                        break;
-                    case 7:
-                        intent = new Intent(context, Activity8.class);
-                        break;
-                    default:
-                        return;
+                    case 0: intent = new Intent(context, Activity1.class); break;
+                    case 1: intent = new Intent(context, Activity2.class); break;
+                    case 2: intent = new Intent(context, Activity3.class); break;
+                    case 3: intent = new Intent(context, Activity4.class); break;
+                    case 4: intent = new Intent(context, Activity5.class); break;
+                    case 5: intent = new Intent(context, Activity6.class); break;
+                    case 6: intent = new Intent(context, Activity7.class); break;
+                    case 7: intent = new Intent(context, Activity8.class); break;
+                    default: return;
                 }
                 context.startActivity(intent);
             });
@@ -213,4 +199,6 @@ public class MainActivity extends AppCompatActivity {
             return convertView;
         }
     }
-    }
+
+}
+

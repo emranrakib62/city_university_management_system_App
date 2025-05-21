@@ -86,17 +86,13 @@
             android:scrollHorizontally="true"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:text="Admission Open for Spring 2025 at City University"
-            android:textSize="18sp"
+            android:text="Admission Open for Fall 2025 at City University"
+            android:textSize="17.5sp"
             android:textStyle="bold"
             android:textColor="@color/black"
 
             />
     </LinearLayout>
-
-
-
-
 
 
     <soup.neumorphism.NeumorphCardView
@@ -120,11 +116,11 @@ app:neumorph_shadowColorDark="#EBEBE1"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:horizontalSpacing="14dp"
+        android:horizontalSpacing="12dp"
         android:numColumns="2"
         android:padding="12dp"
 
         android:stretchMode="columnWidth"
-        android:verticalSpacing="8dp" />
+        android:verticalSpacing="1dp" />
     </soup.neumorphism.NeumorphCardView>
 </LinearLayout>
