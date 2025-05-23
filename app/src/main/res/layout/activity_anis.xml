@@ -10,7 +10,7 @@
     android:padding="12dp"
     tools:context=".ActivityAnis">
 
-    <!-- Round Profile Card -->
+
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/profileCard"
         android:layout_width="130dp"
@@ -42,7 +42,7 @@
 
     </soup.neumorphism.NeumorphCardView>
 
-    <!-- Info Card -->
+
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/myNeumorphCard"
         android:layout_width="match_parent"

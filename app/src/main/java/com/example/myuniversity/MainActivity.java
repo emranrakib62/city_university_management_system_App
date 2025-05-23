@@ -172,13 +172,7 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(images[position]);
             titleView.setText(titles[position]);
 
-            // Animate once per item
-            if (!animatedPositions[position]) {
-                Animation animation = AnimationUtils.loadAnimation(context,
-                        (position % 2 == 0) ? R.anim.slide_in_left : R.anim.slide_in_right);
-                convertView.startAnimation(animation);
-                animatedPositions[position] = true;
-            }
+
 
             convertView.setOnClickListener(v -> {
                 Intent intent;
