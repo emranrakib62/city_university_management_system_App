@@ -9,18 +9,8 @@
     android:orientation="vertical"
     tools:context=".ScienceFacultyActivity">
 
-    <ScrollView
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/questionTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:padding="8dp"
-            android:background="@android:color/white" />
-    </ScrollView>
-
+        android:layout_height="match_parent"/>
 </LinearLayout>

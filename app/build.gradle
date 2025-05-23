@@ -45,8 +45,13 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2' // Image slideshow library
+
+    // Additional libraries
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
     implementation 'com.github.fornewid:neumorphism:0.3.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    // ✅ AndroidX-compatible PDF viewer
+    implementation 'com.github.DImuthuUpe:AndroidPdfViewer:3.1.0-beta.1'
 }
+
