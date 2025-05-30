@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
             String username = usernameField.getText().toString().trim();
             String password = passwordField.getText().toString().trim();
 
-            if (username.equals("Rakib") && password.equals("12345")) { // Hardcoded credentials
+            if (username.equals("Emranul Hoque") && password.equals("12345678")) { // Hardcoded credentials
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean("isLoggedIn", true);
                 editor.apply();
