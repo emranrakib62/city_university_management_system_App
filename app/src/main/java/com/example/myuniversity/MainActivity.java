@@ -50,21 +50,20 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // Check if the user is logged in
         SharedPreferences sharedPreferences = getSharedPreferences("MyUniversityPrefs", Context.MODE_PRIVATE);
         boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
 
         if (!isLoggedIn) {
-            // Redirect to LoginActivity if the user is not logged in
+
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
             finish();
             return;
         }
 
-        // Set the main activity layout
+
         setContentView(R.layout.activity_main);
 
-        // Initialize views
+
         gridView = findViewById(R.id.gridview);
         animatedTextView = findViewById(R.id.animatedTextView);
         imageSlider = findViewById(R.id.imageSlider);
